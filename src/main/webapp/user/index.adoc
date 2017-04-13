@@ -1,0 +1,11 @@
+Apache ServiceMix is a flexible, open-source integration container that unifies the features and functionality of
+Apache ActiveMQ, Camel, CXF and Karaf into a powerful runtime platform for building integrations solutions.
+
+image::/images/smx-overview.png[]
+
+The goal of this document is to introduce you to the different components that are part of Apache ServiceMix and explain
+how and when they can be used together.
+
+Table of contents:
+* link:what-is-smx4.adoc[What is (in) Apache ServiceMix 4]
+* link:technology-selection.adoc[Technology selection guidelines]

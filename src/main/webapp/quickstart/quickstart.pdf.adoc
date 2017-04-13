@@ -1,0 +1,19 @@
+{attributes:layout=/WEB-INF/scalate/layouts/print.ssp}
+{attributes:title=Quickstart Guide}
+
+include::quickstart/index.adoc[]
+
+include::quickstart/installation.adoc[]
+
+include::quickstart/console.adoc[]
+
+include::quickstart/camel.adoc[]
+
+include::quickstart/activemq.adoc[]
+
+include::quickstart/features.adoc[]
+
+= Wrapping it up...
+This is where our introductory journey through the world of Apache ServiceMix ends.  We've obviously just scratched the surface of what is possible, but we hope you have an idea of what you can expect from Apache ServiceMix and how you can use it in your environment.
+
+For more in-depth information, have a look at our set of user guides.  Also, if you have any questions, we welcome you on our user mailing list!
