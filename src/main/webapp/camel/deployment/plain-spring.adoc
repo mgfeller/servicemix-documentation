@@ -1,8 +1,9 @@
 == Deploy as a plain Spring XML file
-ServiceMix ${servicemix.version} supports the deployment of plain Spring XML files, automatically creating and starting the Spring ApplicationContext from the XML file.
+ServiceMix {servicemix-version} supports the deployment of plain Spring XML files, automatically creating and starting the Spring ApplicationContext from the XML file.
 
 In order to leverage this feature to create and start Camel routes, drop a file with this syntax in the _$SERVICEMIX_HOME/deploy_ folder:
-{pygmentize:lang=xml}
+[source,xml]
+----
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -22,7 +23,8 @@ In order to leverage this feature to create and start Camel routes, drop a file 
 
 === An example
 Just create a new XML file in the deploy folder with the code below to start a route to copy files from one directory to another.
-{pygmentize:lang=xml}
+[source,xml]
+----
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

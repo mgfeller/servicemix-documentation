@@ -9,7 +9,8 @@ In this scenario, we also want to move files between directories.  Instead of lo
 == Moving files and sending event messages
 The first Blueprint XML file we'll create contains a Camel route that moves the files from _activemq/input_ to the _activemq/output_ directory.  Afterwards, it will generate an event message and send that to an ActiveMQ queue called _events_.
 
-{pygmentize:lang=xml}
+[source,xml]
+----
 <?xml version="1.0" encoding="UTF-8"?>
 <blueprint
     xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
@@ -39,7 +40,8 @@ Save this file in ServiceMix' _deploy_ folder and use _bundle:list_ to check on 
 == Receiving the event messages
 After deploying the first XML file, you're obviously not seeing any events being logged yet.  The event messages are sent to an ActiveMQ queue, but there's nobody to receive the events yet.  Let's change that now by creating a second Blueprint XML file.
 
-{pygmentize:lang=xml}
+[source,xml]
+----
 <?xml version="1.0" encoding="UTF-8"?>
 <blueprint
     xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"

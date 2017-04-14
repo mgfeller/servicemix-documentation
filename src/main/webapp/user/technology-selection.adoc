@@ -1,5 +1,7 @@
 == Technology selection guide
+
 ServiceMix 4 offers a set of different messaging and integration technologies:
+
 * ActiveMQ
 * Camel
 * CXF

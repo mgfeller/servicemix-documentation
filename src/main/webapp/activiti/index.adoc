@@ -1,3 +1,10 @@
+[WARNING]
+====
+Due to issue https://issues.apache.org/jira/browse/SM-2287[SM-2287], Activiti needs to be added in ServiceMix 5 to the boot features before usage.
+
+To add a boot feature, append the feature name to the featuresBoot list in the etc/org.apache.karaf.features.cfg. Afterwards, remove the data directory and start ServiceMix again.
+====
+
 == Introducing Activiti
 
 Activiti is a BPMN 2.0 process-engine framework that implements the BPMN 2.0 specification. 
@@ -36,9 +43,10 @@ The Apache ServiceMix distributions also contain a Activiti example.  You can fi
 More information about Activiti itself, can be found on http://activiti.org/.
 
 There's also book available about Activiti
+
 * Tijs Rademakers. (July 2012). _Activiti in Action_. Greenwich, CT: Manning. ISBN: 9781617290121.
 
-image::http://www.manning.com/rademakers2/rademakers2_cover150.jpg
+image::http://www.manning.com/rademakers2/rademakers2_cover150.jpg[Activiti in Action]
 
 
 

@@ -8,15 +8,17 @@ When ServiceMix is first started, a whole set of bundles providing the core feat
 
 The _bundle:list_ command can be used to get a list of all bundles currently installed.  Enter this
 
-{pygmentize:lang=text}
+[source,text]
+----
 karaf@root> bundle:list
 ----
 
 This is what the output looks like if you run this on your ServiceMix instance.
 
-image::/quickstart/images/osgi-list.png[]
+image::osgi-list.png[]
 
 For every bundle, you see:
+
 * the bundle id
 * the bundle state
 * if the bundle contains a Blueprint or Spring XML file, the next 2 columns will show you if the beans defined there were created successfully
@@ -25,42 +27,47 @@ For every bundle, you see:
 
 If you're looking for something specific in the list, you can use unix-like pipes and utilities to help you.  An example: to look for all Camel related bundles...
 
-{pygmentize:lang=text}
+[source,text]
+----
 karaf@root> bundle:list | grep camel
 ----
 
-image::/quickstart/images/osgi-list-pipegrep.png[]
+image::osgi-list-pipegrep.png[]
 
 == Working with logging
 
 Many of the applications you write will have some form of log output.  To look at the message in the log file, you can us the _log:diplay_ command.
 
-{pygmentize:lang=text}
+[source,text]
+----
 karaf@root> log:display
 ----
 
-image::/quickstart/images/log-display.png[]
+image::log-display.png[]
 
 If you're only interested in the latest exception in the log file, you can use _log:display-exception_ instead.
 
-{pygmentize:lang=text}
+[source,text]
+----
 karaf@root> log:display-exception
 ----
 
-image::/quickstart/images/log-display-exception.png[]
+image::log-display-exception.png[]
 
 You can also change the log level at runtime by using the _log:set_ command.  You can try these commands on your instance now by first setting the log level to _DEBUG_ and then using _grep_ to make sure that you can actually see the extra logging.
 
-{pygmentize:lang=text}
+[source,text]
+----
 karaf@root> log:set DEBUG
 karaf@root> log:display | grep DEBUG
 ----
 
-image::/quickstart/images/log-set-debug.png[]
+image::log-set-debug.png[]
 
 Afterwards, revert the log level to its original _INFO_ value again with _log:set_.
 
-{pygmentize:lang=text}
+[source,text]
+----
 karaf@root> log:set INFO
 ----
 

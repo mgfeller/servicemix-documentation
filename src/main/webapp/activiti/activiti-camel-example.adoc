@@ -6,12 +6,14 @@ http://aries.apache.org/modules/blueprint.html
 Before being able to run Activiti with Camel, you have to install some additional
 features into the container first to add support for the Activiti.
 
-{pygmentize:lang=text}
+[source,text]
+----
 karaf@root>  features:install activiti
 ----
 
 By default in Servicemix Activiti Engine use an Embedded (Local) H2 Database  the can be found under 
-{pygmentize:lang=text}
+[source,text]
+----
 ${karaf.data}/activiti/database.
 ----
 The Activiti engine is entry point for starting new process instances, deploy new process, querying for
@@ -24,8 +26,8 @@ Let's see how you can set up the Camel context in a Blueprint configuration, as 
 Camel integration runs embedded with the Activiti Engine in the same Blueprint configuration. 
 
 
-{pygmentize:lang=xml}
-
+[source,xml,options="nowrap"]
+----
 <?xml version="1.0" encoding="UTF-8"?>
 <blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
            xmlns:camel="http://camel.apache.org/schema/blueprint">
@@ -71,7 +73,8 @@ Camel integration runs embedded with the Activiti Engine in the same Blueprint c
 === Route Definition
 
 
-{pygmentize:lang=java}
+[source,java,options="nowrap"]
+----
 
 /**
  * Camel routes that interact with the business process defined in the
@@ -146,7 +149,8 @@ public class ActivitiRouteBuilder extends RouteBuilder {
 
 === Process definition
 
-{pygmentize:lang=xml}
+[source,xml,options="nowrap"]
+----
 
 <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:activiti="http://activiti.org/bpmn"
@@ -191,7 +195,8 @@ another bit of processing occurs before the business process ends.
 
 This process defines the BPMN definition and is automatically deployed as soon as bundle is started:
 
-{pygmentize:lang=text}
+[source,text]
+----
 start --> processOrder --> waitForDelivery --> processDelivery --> end
 ----
 

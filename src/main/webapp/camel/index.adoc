@@ -8,6 +8,7 @@ Apache Camel is installed by default if you first start the container.  We also 
 == Goal of this guide
 
 The goal of this guide is to look into the details for using Camel inside ServiceMix:
+
 * deployment options
 * installing additional components
 
@@ -20,7 +21,8 @@ The Apache ServiceMix distributions also contain a set of Camel examples.  You c
 More information about Camel itself, can be found on http://camel.apache.org.
 
 There's also a great book available about Camel
+
 * Ibsen, Claus, and Anstey, Jonathan. (December 2010). _Camel in Action_. Greenwich, CT: Manning. ISBN: 9781935182368.
 
-image::http://www.manning.com/ibsen/ibsen_cover150.jpg
+image::http://www.manning.com/ibsen/ibsen_cover150.jpg[]
 

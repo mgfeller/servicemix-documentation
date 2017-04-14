@@ -1,8 +1,9 @@
 == Deploy as a plain Blueprint XML file
-ServiceMix ${servicemix.version} supports the deployment of plain Blueprint XML files, automatically creating and starting the Blueprint container from the XML file.
+ServiceMix {servicemix-version} supports the deployment of plain Blueprint XML files, automatically creating and starting the Blueprint container from the XML file.
 
 In order to leverage this feature to create and start Camel routes, drop a file with this syntax in the _$SERVICEMIX_HOME/deploy_ folder:
-{pygmentize:lang=xml}
+[source,xml]
+----
 <?xml version="1.0" encoding="UTF-8"?>
 <blueprint
     xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
@@ -20,7 +21,8 @@ In order to leverage this feature to create and start Camel routes, drop a file 
 
 === An example
 Just create a new XML file in the deploy folder with the code below to start a route to copy files from one directory to another.
-{pygmentize:lang=xml}
+[source,xml]
+----
 <?xml version="1.0" encoding="UTF-8"?>
 <blueprint
     xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"

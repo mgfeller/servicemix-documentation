@@ -4,6 +4,7 @@ target
 .project
 *.i??
 .idea
+.vscode
 
 # Mac OSX
 .DS_Store

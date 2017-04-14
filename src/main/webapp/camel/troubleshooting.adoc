@@ -4,7 +4,8 @@ In this section, you'll find solutions for some frequently asked questions when 
 This usually means that your route is trying to use a component that hasn't been installed yet.
 
 Solution:
-# install the additional component
-# restart the bundle using the _bundle:restart <bundle id>_ command - you can find the bundle id for your route in the output of the _bundle:list_ command
+
+. install the additional component
+. restart the bundle using the _bundle:restart <bundle id>_ command - you can find the bundle id for your route in the output of the _bundle:list_ command
 
 Refer to link:/users-guide/camel/installing-components.adoc[Installing additional components]

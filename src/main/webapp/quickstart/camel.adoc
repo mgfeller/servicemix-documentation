@@ -8,7 +8,8 @@ In this simple scenario, we're going to move files from an input directory calle
 == Creating the route
 One of the most simple ways to deploy a new route on ServiceMix, is by defining the route in a Blueprint XML file.
 
-{pygmentize:lang=xml}
+[source,xml]
+----
 <?xml version="1.0" encoding="UTF-8"?>
 <blueprint
     xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
@@ -33,24 +34,26 @@ In order to deploy and start the route, just copy the XML file you created into 
 
 If you do a _log:display_ in the shell, you will also see the log output for every file that's been moved.
 
-image::/quickstart/images/camel-sample-log.png[]
+image::camel-sample-log.png[]
 
 == Using the shell to manage the route
 
 Using _bundle:list_, you'll notice that your XML file has been transformed into a bundle and that the Blueprint container has been created to start your Camel route.
 
-image::/quickstart/images/camel-sample-deploy.png[]
+image::camel-sample-deploy.png[]
 
 From this output, you also learn that the bundle id for your XML file is 200.  This allow you to start and stop the route whenever necessary.  Let's give this a go now...
 
 First, stop the route with
-{pygmentize:lang=text}
+[source,text]
+----
 karaf@root> bundle:stop 200
 ----
 
 The route is no longer active, so any files you copy into the _orders/input_ folder will remain there for now.  As soon as you restart the route, the pending files will get moving again.
 
-{pygmentize:lang=text}
+[source,text]
+----
 karaf@root> bundle:start 200
 ----
 

@@ -1,4 +1,5 @@
 = Installation
+
 Before we can start working with Apache ServiceMix, we have to get it installed and running on our local machine first.
 
 == System requirements
@@ -18,9 +19,10 @@ If you're developing your own integration applications and OSGi bundles, you'll 
 
 == Downloading Apache ServiceMix
 
-Apache ServiceMix ${servicemix.version} is available under the Apache License v2 and can be downloaded from http://servicemix.apache.org/downloads.html.
+Apache ServiceMix {servicemix-version} is available under the Apache License v2 and can be downloaded from http://servicemix.apache.org/downloads.html.
 
 Depending on your operation system, you should download either the tar.gz or the zip file:
+
 * _tar.gz_ for Linux/Unix/MacOS X
 * _zip_ for Windows
 
@@ -36,20 +38,22 @@ Depending on your platform, start Apache ServiceMix by following the instruction
 In a command prompt window, navigate to the directory where you extracted ServiceMix and run the _bin\servicemix.bat_ file.
 
 Example: if ServiceMix in installed in the _c:\tools\apache-servicemix-${servicemix.version_} directory
-{pygmentize:lang=bat}
-> cd c:\tools\apache-servicemix-${servicemix.version}
+[source,text,subs="attributes"]
+----
+> cd c:\tools\apache-servicemix-{servicemix-version}
 > .\bin\servicemix
 ----
 
-image::/quickstart/images/start-windows.png[]
+image::start-windows.png[]
 
 === On Linux/Unix/MacOS X
 On a command shell, navigate to the directory where you extracted ServiceMix and the _bin/servicemix_ shell script
 
 Example: if ServiceMix is installed in the _~/Applications/apache-servicemix-${servicemix.version_} directory.
-{pygmentize:lang=bash}
-$ cd ~/Applications/apache-servicemix-${servicemix.version}
+[source,text,subs="attributes"]
+----
+$ cd ~/Applications/apache-servicemix-{servicemix-version}
 $ ./bin/servicemix
 ----
 
-image::/quickstart/images/start-linux.png[]
+image::start-linux.png[]

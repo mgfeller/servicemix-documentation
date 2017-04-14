@@ -5,11 +5,12 @@
 It is often easy to define two application contexts for spring-dm, it helps you re-use configuration in Junit tests
 and cleanly separates OSGi from the normal spring application contexts.
 
-You define these files in a bundle by adding them to the classpath under META-INF/spring
+You define these files in a bundle by adding them to the classpath under META-INF/spring.
 
 ==== OSGi Application context
 
-{pygmentize:lang=xml}
+[source,xml]
+----
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -33,7 +34,8 @@ You define these files in a bundle by adding them to the classpath under META-IN
 
 ==== Normal spring application context.
 
-{pygmentize:lang=xml}
+[source,xml]
+----
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
