@@ -1,5 +1,0 @@
-= Introduction
-
-First of all, welcome to the Apache ServiceMix project!
-
-The goal of this Quickstart guide is to give you a 20-minute overview of what ServiceMix is and what you can do with it.  In that time, we'll install ServiceMix on your machine, deploy some basic integration routes and extend the container with an additional feature.
