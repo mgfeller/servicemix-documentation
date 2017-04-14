@@ -10,8 +10,8 @@
 
     <properties>
         <asciidoc.outputdirectory>${project.build.directory}/docs</asciidoc.outputdirectory>     
-        <asciidoctorj.version>1.5.4</asciidoctorj.version>
-        <asciidoctor-maven-plugin.version>1.5.3</asciidoctor-maven-plugin.version>
+        <asciidoctorj.version>1.5.5</asciidoctorj.version>
+        <asciidoctor-maven-plugin.version>1.5.5</asciidoctor-maven-plugin.version>
     </properties>
 
     <prerequisites>
@@ -35,6 +35,7 @@
                 <configuration>
                     <sourceDirectory>src/main/asciidoc</sourceDirectory>
 					<imagesDir>./images</imagesDir>
+                    <doctype>article</doctype>
                     <!-- Attributes common to all output formats -->
                     <attributes>
                         <project-version>${project.version}</project-version>
@@ -51,17 +52,18 @@
                         <configuration>
                             <backend>html5</backend>
                             <sourceHighlighter>coderay</sourceHighlighter>
-                            <doctype>article</doctype>
+
                             <!--preserveDirectories>true</preserveDirectories-->                            
                             <attributes>
                                 <toc>left@</toc>
                                 <toclevels>5@</toclevels>
-                                <last-update-label></last-update-label>
+                                <last-update-label>Generated </last-update-label>
                                 <icons>font</icons>
                                 <sectanchors>true</sectanchors>
                                 <idprefix/>
                                 <idseparator>-</idseparator>
                                 <docinfo1>true</docinfo1>
+                                <nofooter/>
                             </attributes>
                         </configuration>
                     </execution>
