@@ -19,10 +19,14 @@ Apache Software Foundation
  (BPM) Platform targeted at business people, developers and system admins, ...#
 * <<command-reference#,Command Reference>> +
  [smx-list-description]#Help pages for all the available commands in the Apache ServiceMix console.#
-* <<karaf-user-guide#,Karaf User Guide>> + 
- [smx-list-description]#Apache ServiceMix uses Apache Karaf as the underlying OSGi server runtime. This manual explains 
- about the features and functionality provided by Karaf.#
-* <<karaf-developer-guide#,Karaf Developer Guide>> +
+* link:++https://karaf.apache.org/manual/latest/#_user_guide++[Karaf User Guide] + 
+ [smx-list-description]#Apache ServiceMix uses Apache Karaf as the underlying OSGi server runtime. This manual explains about the features and functionality provided by Karaf.#
+* link:++https://karaf.apache.org/manual/latest/#_developer_guide++[Karaf Developer Guide] +
  [smx-list-description]#The Apache Karaf Developer Guide gives you some information about developing with and for the OSGi server runtime.#
 * <<commercial-guides#,Commercial Guides>> + 
  [smx-list-description]#Documentation from commercial providers and books you can buy.#
+* <<contribute#,We welcome contributions!>>
+* <<documentation#,Complete Documentation>> +
+ [smx-list-description]#The complete ServiceMix documentation as one file.#
+
+
