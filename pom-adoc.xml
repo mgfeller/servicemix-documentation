@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.servicemix</groupId>
     <artifactId>documentation-asciidoc</artifactId>
     <version>6.0.0-SNAPSHOT</version>
     <name>Apache ServiceMix Documentation</name>
-	<packaging>pom</packaging>
+    <packaging>pom</packaging>
 
     <properties>
-        <asciidoc.outputdirectory>${project.build.directory}/docs</asciidoc.outputdirectory>     
+        <servicemix.version>7.0.0-SNAPSHOT</servicemix.version>
+        <activiti.version>5.19.0.2</activiti.version>
+        <activemq.version>5.14.3</activemq.version>
+        <camel.version>2.16.4</camel.version>
+        <cxf.version>3.1.5</cxf.version>
+        <karaf.version>4.0.8</karaf.version>
+        <asciidoc.outputdirectory>${project.build.directory}/docs</asciidoc.outputdirectory>
         <asciidoctorj.version>1.5.5</asciidoctorj.version>
         <asciidoctor-maven-plugin.version>1.5.5</asciidoctor-maven-plugin.version>
     </properties>
@@ -34,18 +39,18 @@
                 </dependencies>
                 <configuration>
                     <sourceDirectory>src/main/asciidoc</sourceDirectory>
-					<imagesDir>./images</imagesDir>
+                    <imagesDir>./images</imagesDir>
                     <doctype>article</doctype>
                     <!-- Attributes common to all output formats -->
                     <attributes>
                         <project-version>${project.version}</project-version>
-                        <servicemix-version>7.0.0-SNAPSHOT</servicemix-version>
+                        <servicemix-version>${servicemix.version}</servicemix-version>
                     </attributes>
                 </configuration>
                 <executions>
                     <execution>
-						<id>output-html</id>
-						<phase>generate-resources</phase>
+                        <id>output-html</id>
+                        <phase>generate-resources</phase>
                         <goals>
                             <goal>process-asciidoc</goal>
                         </goals>
@@ -53,7 +58,7 @@
                             <backend>html5</backend>
                             <sourceHighlighter>coderay</sourceHighlighter>
 
-                            <!--preserveDirectories>true</preserveDirectories-->                            
+                            <!--preserveDirectories>true</preserveDirectories-->
                             <attributes>
                                 <toc>left@</toc>
                                 <toclevels>5@</toclevels>
