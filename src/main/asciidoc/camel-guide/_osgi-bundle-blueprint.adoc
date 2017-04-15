@@ -1,4 +1,4 @@
-== Deploy as an OSGi bundle
+=== Deploy as an OSGi bundle
 
 Using an OSGi bundle to deploy your Camel routes allows you to use the Java or Scala DSL for defining your routes.
 
@@ -15,7 +15,7 @@ In this case, we will use a Blueprint XML file to start your Camel routs.  To do
 
 As soon as the bundle becomes Active, the Blueprint extender will create the Blueprint container starting your Routes.
 
-=== Example: Referring to Java or Scala RouteBuilder classes
+==== Example: Referring to Java or Scala RouteBuilder classes
 If your RouteBuilder classes have been defined in the _org.apache.servicemix.manual.camel_ package, the file would look like this:
 [source,xml]
 ----
@@ -34,6 +34,6 @@ If your RouteBuilder classes have been defined in the _org.apache.servicemix.man
 </blueprint>
 ----
 
-=== Example in the distribution
+==== Example in the distribution
 
 Another example for using this deployment option can be found in the _camel-blueprint_ example that is shipped with Apache ServiceMix.

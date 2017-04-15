@@ -1,4 +1,4 @@
-== Deploy as a plain Blueprint XML file
+=== Deploy as a plain Blueprint XML file
 ServiceMix {servicemix-version} supports the deployment of plain Blueprint XML files, automatically creating and starting the Blueprint container from the XML file.
 
 In order to leverage this feature to create and start Camel routes, drop a file with this syntax in the _$SERVICEMIX_HOME/deploy_ folder:
@@ -19,7 +19,7 @@ In order to leverage this feature to create and start Camel routes, drop a file 
 </blueprint>
 ----
 
-=== An example
+==== An example
 Just create a new XML file in the deploy folder with the code below to start a route to copy files from one directory to another.
 [source,xml]
 ----

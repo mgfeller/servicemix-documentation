@@ -60,7 +60,7 @@ There's also book available about Activiti
 
 * Tijs Rademakers. (July 2012). _Activiti in Action_. Greenwich, CT: Manning. ISBN: 9781617290121.
 
-image::http://www.manning.com/rademakers2/rademakers2_cover150.jpg[Activiti in Action]
+image::rademakers2.png[Activiti in Action]
 
 
 
