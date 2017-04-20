@@ -21,23 +21,12 @@ This new version of Apache ServiceMix is more than an evolution of the previous 
 ServiceMix is lightweight and easily embeddable, has integrated Spring support and can be run at the edge of the network (inside a client or server), as a standalone ESB provider or as a service within another ESB. You can use ServiceMix in Java SE or Java EE application server.
 
 === Platform presentation
-Apache ServiceMix is an distributed ESB built from the ground up on the Java Business Integration (JBI) specification JSR 208 and released under the Apache license. The goal of JBI is to allow components and services to be integrated in a vendor independent way, allowing users and vendors to plug and play.
+
+Apache ServiceMix is a distributed ESB built from the ground up and released under the Apache license. 
 
 ServiceMix uses ActiveMQ to provide remoting, clustering, reliability and distributed failover.
 
-ServiceMix is completely integrated into Apache Geronimo, which allows you to deploy JBI components and services directly into Geronimo. ServiceMix is being JBI certified as part of the Geronimo project.
-
 ServiceMix can be embedded into a JEE application server such as JBoss, Oracle Weblogic or IBM Websphere.
-
-ServiceMix includes a complete JBI container supporting all parts of the JBI specification including:
-
-* NMR (Normalized Message Router)</para>
-* JBI Management MBeans
-* full support for the JBI deployment units with hot-deployment of JBI components
-
-ServiceMix also provides a simple to use client API for working with JBI components and services.
-
-ServiceMix includes many JBI components including HTTP, JMX, CXF, BPEL, etc.
 
 === OSGi for Dummies
 http://www.osgi.org/About/Technology[OSGi technology] is the dynamic module system for http://www.oracle.com/technetwork/java/index.html[Java]. The OSGi Service Platform provides functionality to Java that makes Java the premier environment for software integration and thus for development. Java provides the portability that is required to support products on many different platforms. The OSGi technology provides the standardized primitives that allow applications to be constructed from small, reusable and collaborative components. These components can be composed into an application and deployed.
@@ -72,17 +61,6 @@ Security framework based on JAAS
 Managing instances: Karaf provides simple commands for managing multiple instances. You can easily create, delete, start and stop instances of Karaf through the console.
 
 For more information, check out the http://karaf.apache.org/[Apache Karaf project page].
-
-=== JBI Container &amp; Integration with OSGI
-_TODO: write this bit_
-
-=== Normalized Message Router
-The Normalized Message Router (NMR) is a general-purpose message bus used for communication between bundles in the OSGi container.
-It's modeled after the Normalized Message Router (NMR) defined in the Java Business Integration (JBI) specification (http://www.jcp.org/en/jsr/detail?id=208).
-
-It can be used to transport XML messages as well as other message body types, optionally augumented with headers and attachments.
-
-For more information, check out the <<../nmr/index.html.adoc#,Using the Normalized Message Router User Guide>>
 
 === Apache Camel
 Apache Camel is a powerful open source integration framework based on known http://camel.apache.org/enterprise-integration-patterns.html[Enterprise Integration Patterns] with powerful http://camel.apache.org/bean-integration.html[Bean Integration].

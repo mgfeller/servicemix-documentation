@@ -49,9 +49,8 @@ and many advanced features while fully supporting JMS 1.1 and J2EE 1.4. Apache A
 
 === Using ActiveMQ from ServiceMix
 
-To start using ActiveMQ from your code, simply get a hold of the connection pool declared in the activemq-broker.xml file.
-If you want to use ActiveMQ as a JBI component, configure servicemix-jms. You can also utilize ActiveMQ from Camel via the
-camel-jms component.
+To start using ActiveMQ from your code, simply get a hold of the connection pool declared in the activemq-broker.xml file. You can
+also utilize ActiveMQ from Camel via the camel-jms component.
 
 === When should I use ActiveMQ?
 Whenever you have a unit of work or payload that you could process asynchronously, you would like to have multiple recipients,
