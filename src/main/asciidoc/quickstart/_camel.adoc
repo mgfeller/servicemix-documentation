@@ -44,7 +44,10 @@ One of the most simple ways to deploy a new route on ServiceMix, is by defining 
 ----
 
 === Deploying the route
-In order to deploy and start the route, just copy the XML file you created into ServiceMix' _deploy_ directory.  The file will get picked up and deployed by ServiceMix.  You will see a _camel/input_ folder appear in your ServiceMix installation directory and any files you copy into that directory will get moved into the _camel/output_ directory.
+
+In order to deploy and start the route, just copy the XML file you created into ServiceMix' _deploy_ directory.  The file will get
+picked up and deployed by ServiceMix.  You will see a _camel/input_ folder appear in your ServiceMix installation directory and any
+files you copy into that directory will get moved into the _camel/output_ directory.
 
 If you do a _log:display_ in the shell, you will also see the log output for every file that's been moved.
 
@@ -56,18 +59,19 @@ Using _bundle:list_, you'll notice that your XML file has been transformed into 
 
 image::camel-sample-deploy.png[]
 
-From this output, you also learn that the bundle id for your XML file is 200.  This allow you to start and stop the route whenever necessary.  Let's give this a go now...
+From this output, you also learn that the bundle id for your XML file is 250.  This allow you to start and stop the route whenever necessary.  Let's give this a go now...
 
 First, stop the route with
 [source,text]
 ----
-karaf@root> bundle:stop 200
+karaf@root> bundle:stop 250
 ----
 
-The route is no longer active, so any files you copy into the _orders/input_ folder will remain there for now.  As soon as you restart the route, the pending files will get moving again.
+The route is no longer active, so any files you copy into the _orders/input_ folder will remain there for now.  As soon as you
+restart the route, the pending files will get moving again.
 
 [source,text]
 ----
-karaf@root> bundle:start 200
+karaf@root> bundle:start 250
 ----
 

@@ -1,22 +1,3 @@
-== Installation
-
-Before we can start working with Apache ServiceMix, we have to get it installed and running on our local machine first.
-
-=== System requirements
-
-For running Apache ServiceMix itself, you'll need
-
-* Java Runtime Environment (JRE) 1.6.x (Java 6) or
-  Java Runtime Environment (JRE) 1.7.x (Java 7)
-* About 100 MB of free disk space for the default assembly
-
-If you're developing your own integration applications and OSGi bundles, you'll also need
-
-* Java Developer Kit (JDK) 1.6.x (Java 6) or
-  Java Developer Kit (JDK) 1.7.x (Java 7)
-* Apache Maven 3.0.4 or higher
-
-
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -30,6 +11,24 @@ If you're developing your own integration applications and OSGi bundles, you'll 
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
+
+== Installation
+
+Before we can start working with Apache ServiceMix, we have to get it installed and running on our local machine first.
+
+=== System requirements
+
+For running Apache ServiceMix itself, you'll need
+
+* Java Runtime Environment (JRE) 1.7.x (Java 7) or
+  Java Runtime Environment (JRE) 1.8.x (Java 8)
+* About 100 MB of free disk space for the default assembly
+
+If you're developing your own integration applications and OSGi bundles, you'll also need
+
+* Java Developer Kit (JDK) 1.7.x (Java 7) or
+  Java Developer Kit (JDK) 1.8.x (Java 8)
+* Apache Maven 3.0.4 or higher
 
 === Downloading Apache ServiceMix
 
@@ -63,10 +62,10 @@ image::start-windows.png[]
 ==== On Linux/Unix/MacOS X
 On a command shell, navigate to the directory where you extracted ServiceMix and the _bin/servicemix_ shell script
 
-Example: if ServiceMix is installed in the _~/Applications/apache-servicemix-{servicemix-version}_ directory.
+Example: if ServiceMix is installed in the _~/bin/apache-servicemix-{servicemix-version}_ directory.
 [source,text,subs="attributes"]
 ----
-$ cd ~/Applications/apache-servicemix-{servicemix-version}
+$ cd ~/bin/apache-servicemix-{servicemix-version}
 $ ./bin/servicemix
 ----
 

@@ -14,33 +14,41 @@
 
 == Optional features
 
-Everything discussed in the quickstart guide so far is installed out-of-the-box in Apache ServiceMix, but we also have a lot of optional features that can be installed in the container when necessary.
+Everything discussed in the quickstart guide so far is installed out-of-the-box in Apache ServiceMix, but we also have a lot of
+optional features that can be installed in the container when necessary.
 
 === List of features
-The list of features is available with the _features:list_ command.  The overview shows you whether or not the feature is currently installed, the version and the name of the feature.
+
+The list of features is available with the _feature:list_ command.  The overview shows you whether or not the feature is currently
+installed, the version and the name of the feature.
 
 image::featureslist.png[]
 
-The full list contains a lot of different features: optional Camel components, features for adding OBR or wrapper support to Serviceix, a web console, ...  Again, you can use things like _|_ and _grep_ to find the things in the list that you're interested in.
+The full list contains a lot of different features: optional Camel components, features for adding OBR or wrapper support to
+ServiceMix, a web console, ...  Again, you can use things like _|_ and _grep_ to find the things in the list that you're interested
+in.
 
 [source,text]
 ----
-karaf@root> features:list | grep camel
+karaf@root> feature:list | grep camel
 ----
 
 === Example: Web console
+
 To get the web console installed in ServiceMix, install the feature from your console
 [source,text]
 ----
-karaf@root> features:install webconsole
+karaf@root> feature:install webconsole
 ----
 
-Afterwards, you can verify that the feature is marked installed in the overview.  You'll notice that the _webconsole-base_ feature has also been installed as a requirement for the _webconsole_ feature itself.
+Afterwards, you can verify that the feature is installed and started in the overview.
+
 [source,text]
 ----
-karaf@root> features:list | grep webconsole
+karaf@root> feature:list | grep -i webconsole
 ----
 
 image::featureslist-grep-webconsole.png[]
 
-You will now be able to point your browser to http://localhost:8181/system/console and login with user _smx_ and password _smx_ to access the web console.  From the webconsole, you can also start and stop bundles, install optional features again, ...
+You will now be able to point your browser to http://localhost:8181/system/console and login with user _smx_ and password _smx_ to
+access the web console.  From the webconsole, you can also start and stop bundles, install optional features again, ...

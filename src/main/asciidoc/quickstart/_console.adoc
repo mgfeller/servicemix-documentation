@@ -35,9 +35,8 @@ For every bundle, you see:
 
 * the bundle id
 * the bundle state
-* if the bundle contains a Blueprint or Spring XML file, the next 2 columns will show you if the beans defined there were created successfully
 * the bundle start level
-* the bundle name and version
+* the bundle version and name
 
 If you're looking for something specific in the list, you can use unix-like pipes and utilities to help you.  An example: to look for all Camel related bundles...
 
@@ -59,11 +58,11 @@ karaf@root> log:display
 
 image::log-display.png[]
 
-If you're only interested in the latest exception in the log file, you can use _log:display-exception_ instead.
+If you're only interested in the latest exception in the log file, you can use _log:exception-display_ instead.
 
 [source,text]
 ----
-karaf@root> log:display-exception
+karaf@root> log:exception-display
 ----
 
 image::log-display-exception.png[]
