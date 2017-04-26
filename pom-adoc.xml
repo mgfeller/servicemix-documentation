@@ -45,6 +45,7 @@
                     <attributes>
                         <project-version>${project.version}</project-version>
                         <servicemix-version>${servicemix.version}</servicemix-version>
+                        <camel-version>${camel.version}</camel-version>
                     </attributes>
                 </configuration>
                 <executions>

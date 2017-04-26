@@ -14,9 +14,9 @@
 
 == Introducing ActiveMQ
 
-Apache ActiveMQ is the most popular and powerful open source messaging and Integration Patterns provider.
-Apache ActiveMQ is fast, supports many Cross Language Clients and Protocols
-and many advanced features while fully supporting JMS 1.1 and J2EE 1.4. Apache ActiveMQ is released under the Apache 2.0 License
+Apache ActiveMQ is the most popular and powerful open source messaging and Integration Patterns provider. Apache ActiveMQ is fast,
+supports many Cross Language Clients and Protocols and many advanced features while fully supporting JMS 1.1 and J2EE 1.4. Apache
+ActiveMQ is released under the Apache 2.0 License.
 
 === ActiveMQ Supports
 
@@ -49,10 +49,11 @@ and many advanced features while fully supporting JMS 1.1 and J2EE 1.4. Apache A
 
 === Using ActiveMQ from ServiceMix
 
-To start using ActiveMQ from your code, simply get a hold of the connection pool declared in the activemq-broker.xml file. You can
-also utilize ActiveMQ from Camel via the camel-jms component.
+To start using ActiveMQ from your code, simply get hold of the connection pool declared in the activemq.xml file. You can also
+utilize ActiveMQ from Camel via the camel-jms component.
 
 === When should I use ActiveMQ?
+
 Whenever you have a unit of work or payload that you could process asynchronously, you would like to have multiple recipients,
 concurrent competing recipients to scale or leverage multiple processing units. If you want to spread load across multiple
 system boundaries. You want to cluster or provide fail over and messaging security, you have long running flows.
@@ -60,6 +61,7 @@ system boundaries. You want to cluster or provide fail over and messaging securi
 In any of these instances it would be strongly suggested you evaluate what a scalable and secure messaging solution can bring to the table.
 
 === Common use cases
+
 Integration with other systems, since you can pass messages in and out of ActiveMQ from pretty much any programming language
 it is very simple to start integrating heterogeneous environments.
 
