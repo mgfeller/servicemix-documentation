@@ -18,7 +18,7 @@
 
 include::_introduction.adoc[]
 
-include::_what-is-smx4.adoc[]
+include::_what-is-servicemix.adoc[]
 
 include::_technology-selection.adoc[]
 

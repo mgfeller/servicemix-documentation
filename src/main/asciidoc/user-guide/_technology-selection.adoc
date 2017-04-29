@@ -14,13 +14,14 @@
 
 == Technology selection guide
 
-ServiceMix 4 offers a set of different messaging and integration technologies:
+ServiceMix offers a set of different messaging and integration technologies:
 
 * ActiveMQ
 * Camel
 * CXF
 
-Depending on the solution you're building, you want to select one or more of these technologies.  Below are some guidelines to help you pick the right mix for your problem.
+Depending on the solution you're building, you want to select one or more of these technologies.  Below are some guidelines to help
+you pick the right mix for your problem.
 
 === When to use Camel?
 
@@ -31,14 +32,20 @@ by packaging the route in an OSGi bundle.
 As you need more (advanced) features, start combining Camel with ActiveMQ and CXF.
 
 === When to use ActiveMQ?
-ActiveMQ is a JMS message broker, featuring support for clustering, pluggable persistence mechanism, master-slave configuration for failover, ...
 
-ServiceMix 4 includes an instance of the ActiveMQ broker, which can be combined with Camel to provide easy-to-use message persistence and reliable messaging.
+ActiveMQ is a JMS message broker, featuring support for clustering, pluggable persistence mechanism, master-slave configuration for
+failover, ...
 
-After setting up multiple instances of ActiveMQ (or ServiceMix 4) on the network, you can configure ActiveMQ clustering or master-slave mode to allow for a more reliable and scalable set-up.
+ServiceMix includes an instance of the ActiveMQ broker, which can be combined with Camel to provide easy-to-use message persistence
+and reliable messaging.
+
+After setting up multiple instances of ActiveMQ (or ServiceMix) on the network, you can configure ActiveMQ clustering or
+master-slave mode to allow for a more reliable and scalable set-up.
 
 === When to use CXF?
-CXF is an open-source services framework that you can use to suit your WS-* standards integration needs.  It allows you to use common programming APIs like JAX-RS or JAX-WS for building your own services and to expose them to the outside world.
+
+CXF is an open-source services framework that you can use to suit your WS-* standards integration needs.  It allows you to use
+common programming APIs like JAX-RS or JAX-WS for building your own services and to expose them to the outside world.
 
 You can use CXF from within your Camel routes with the Camel CXF component.
 
