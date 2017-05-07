@@ -26,13 +26,14 @@
 		<karaf.commands.dir>${asciidoc.sourceDirectory}/generated-docs-karaf/</karaf.commands.dir>
 	</properties>
 	<prerequisites>
-		<maven>3.0.0</maven>
+		<maven>3.0.5</maven>
 	</prerequisites>
 	<build>
 		<defaultGoal>process-resources</defaultGoal>
 		<plugins>
 			<plugin>
 				<artifactId>maven-clean-plugin</artifactId>
+				<version>3.0.0</version>
 				<configuration>
 					<filesets>
 						<fileset>
@@ -269,6 +270,7 @@
 			<plugin>
 				<groupId>org.codehaus.groovy.maven</groupId>
 				<artifactId>gmaven-plugin</artifactId>
+				<version>1.0</version>
 				<executions>
 					<execution>
 						<id>create-commands-adoc-file</id>

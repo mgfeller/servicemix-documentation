@@ -14,12 +14,18 @@
 
 == Introduction
 
-Apache Camel is a powerful open source integration framework based on known Enterprise Integration Patterns with powerful Bean Integration.
+Apache Camel is a powerful open source integration framework based on known Enterprise Integration Patterns with powerful Bean
+Integration.
 
 === Camel in ServiceMix
-In ServiceMix, Apache Camel is like our swiss army knife for creating integration solutions.  It allows using XML or a Java/Scala-based DSL to express your routes, comes with over 70 optional components, has powerful and versatile Java bean integration, error handling, ... and tons of other features.
 
-Apache Camel is installed by default if you first start the container.  We also have out-of-the-box hot-deployment support for both Spring and Blueprint to make it easy to deploy your own Camel routes, as well as optionally installable features for all the available Camel components.
+In ServiceMix, Apache Camel is like our swiss army knife for creating integration solutions.  It allows using XML or a
+Java/Scala-based DSL to express your routes, comes with almost 200 optional components, has powerful and versatile Java bean
+integration, error handling, and tons of other features.
+
+Apache Camel is installed by default if you first start the container.  We also have out-of-the-box hot-deployment support for both
+Spring and Blueprint to make it easy to deploy your own Camel routes, as well as optionally installable features for all the
+available Camel components.
 
 === Goal of this guide
 
@@ -30,15 +36,17 @@ The goal of this guide is to look into the details for using Camel inside Servic
 
 === Examples
 
-The Apache ServiceMix distributions also contain a set of Camel examples.  You can find these examples in the _examples/camel_ directory.
+The Apache ServiceMix distribution also contain a set of Camel examples.  You can find these examples in the _examples/camel_
+directory.
 
 === More information about Camel
 
-More information about Camel itself, can be found on http://camel.apache.org.
+More information about Camel itself can be found on http://camel.apache.org.
 
-There's also a great book available about Camel
+There's also a great book available about Camel. Its second edition is planned to be published in July 2017:
 
-* Ibsen, Claus, and Anstey, Jonathan. (December 2010). _Camel in Action_. Greenwich, CT: Manning. ISBN: 9781935182368.
+* Ibsen, Claus, and Anstey, Jonathan. (July 2017). _https://www.manning.com/books/camel-in-action-second-edition[Camel in Action,
+Second Edition]_. Manning Publications. ISBN: 9781617292934.
 
-image::ibsen_cover150.jpg[Camel in Action]
+image::ibsen_2nd_meap.png[Camel in Action, Second Edition]
 

@@ -33,7 +33,7 @@ in.
 karaf@root> feature:list | grep camel
 ----
 
-=== Example: Web console
+=== Example: web console
 
 To get the web console installed in ServiceMix, install the feature from your console
 [source,text]

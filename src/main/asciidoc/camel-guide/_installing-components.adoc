@@ -14,38 +14,36 @@
 
 == Installing Components [[camel-installing]]
 
-Camel comes with over 80 components, so you can imagine that we don't install all of them by default.  This section shows you how to find available components and how to install them at runtime.
+Camel comes with almost 200 components, so you can imagine that we don't install all of them by default.  This section shows you how
+to find available components and how to install them at runtime.
 
 === List available components
-Camel components are available as installable features.  You can look at the full list of available features using the _features:list_ command, using _grep_ to limit things down to features related to camel:
 
-[source,text]
-----
-karaf@root> features:list | grep camel
-[installed  ] [${camel.version}    ] camel                                repo-0
-[installed  ] [${camel.version}    ] camel-core                           repo-0
-[installed  ] [${camel.version}    ] camel-spring                         repo-0
-[installed  ] [${camel.version}    ] camel-blueprint                      repo-0
-[uninstalled] [${camel.version}    ] camel-test                           repo-0
-[uninstalled] [${camel.version}    ] camel-cxf                            repo-0
-[uninstalled] [${camel.version}    ] camel-cache                          repo-0
-[uninstalled] [${camel.version}    ] camel-castor                         repo-0
-...
-----
+Camel components are available as installable features.  You can look at the full list of available features using the
+_feature:list_ command, using _grep_ to limit things down to features related to Camel:
 
-The items marked with *_installed_* in the first column have already been installed and are available for use in your Camel routes.
+[source,text,subs="attributes"]
+----
+karaf@root> feature:list | grep camel
+camel-xmlsecurity     | {camel-version}      |          | Uninstalled | camel-{camel-version}  |
+camel-xmpp            | {camel-version}      |          | Uninstalled | camel-{camel-version}  |
+camel-xstream         | {camel-version}      | x        | Started     | camel-{camel-version}  |
+camel-yammer          | {camel-version}      |          | Uninstalled | camel-{camel-version}  |
+camel-zipfile         | {camel-version}      |          | Uninstalled | camel-{camel-version}  |
+----
 
 === Install and uninstalling components
-You can use _features:install_ to install any component on the list.
+
+You can use _feature:install_ to install any component on the list.
 
 An example: to install the _camel-cache_ component
 [source,text]
 ----
-karaf@root> features:install camel-cache
+karaf@root> feature:install camel-cache
 ----
 
-Similarly, you can also uninstall components that you're no longer using with _features:uninstall_
+Similarly, you can also uninstall components that you're no longer using with _feature:uninstall_
 [source,text]
 ----
-karaf@root> features:uninstall camel-cache
+karaf@root> feature:uninstall camel-cache
 ----

@@ -13,49 +13,37 @@
 //
 
 === Deploy as a plain Spring XML file
-ServiceMix {servicemix-version} supports the deployment of plain Spring XML files, automatically creating and starting the Spring ApplicationContext from the XML file.
 
-In order to leverage this feature to create and start Camel routes, drop a file with this syntax in the _$SERVICEMIX_HOME/deploy_ folder:
-[source,xml]
+ServiceMix supports the deployment of plain Spring XML files, automatically creating and starting the Spring ApplicationContext from
+the XML file.
+
+In order to leverage this feature to create and start Camel routes, drop a file with this syntax in the _$SERVICEMIX_HOME/deploy_
+folder:
+
+[source,xml,options="nowrap"]
 ----
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:camel="http://camel.apache.org/schema/spring"
-       xsi:schemaLocation="
-          http://www.springframework.org/schema/beans
-            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
-          http://camel.apache.org/schema/spring
-            http://camel.apache.org/schema/spring/camel-spring-${camel.version}.xsd">
-
-  <camelContext xmlns="http://camel.apache.org/schema/spring">
-    <!-- add Camel routes, interceptors,... here --> 
-  </camelContext>
-
-</beans>
+include::plain-spring-template.xml[]
 ----
 
-==== An example
-Just create a new XML file in the deploy folder with the code below to start a route to copy files from one directory to another.
-[source,xml]
-----
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:camel="http://camel.apache.org/schema/spring"
-       xsi:schemaLocation="
-          http://www.springframework.org/schema/beans
-            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
-          http://camel.apache.org/schema/spring
-            http://camel.apache.org/schema/spring/camel-spring-${camel.version}.xsd">
+==== Example
 
-  <camelContext xmlns="http://camel.apache.org/schema/spring">
-    <route>
-      <from uri="file:input"/>
-      <log message="Copying ${file:name} to the output directory"/>
-      <to uri="file:output"/>
-    </route>
-  </camelContext>
+Create a new XML file, plain-spring.xml, in the deployment folder with the code below to start a route to copy files from one
+directory to another.
 
-</beans>
+[source,xml,options="nowrap"]
 ----
+include::plain-spring.xml[]
+----
+
+Verify in the Karaf console that it has been started:
+
+[source,text]
+----
+karaf@root> bundle:list | grep plain-spring
+223 | Active   |  80 | 0.0.0                              | plain-spring.xml
+karaf@root>
+----
+
+Copy a file into the folder _$SERVICEMIX_HOME/input_, and verify that it is copied to the folder _$SERVICEMIX_HOME/output_. Note
+that the original file has been moved to the folder _$SERVICEMIX_HOME/input/.camel_.
+

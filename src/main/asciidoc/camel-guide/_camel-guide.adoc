@@ -19,9 +19,13 @@
 include::_introduction.adoc[]
 
 include::_deployment.adoc[]
+
 include::_plain-spring.adoc[]
+
 include::_plain-blueprint.adoc[]
+
 include::_osgi-bundle-spring.adoc[]
+
 include::_osgi-bundle-blueprint.adoc[]
 
 include::_installing-components.adoc[]

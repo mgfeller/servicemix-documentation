@@ -12,9 +12,9 @@
 // limitations under the License.
 //
 
-== Deployment options
+== Deployment Options
 
-There are a few different ways to deploy Camel routes on ServiceMix {servicemix-version}:
+There are a few different ways to deploy Camel routes on ServiceMix:
 
 * deploy routes in a plain Blueprint XML file
 * deploy routes in a plain Spring XML file
@@ -24,21 +24,22 @@ There are a few different ways to deploy Camel routes on ServiceMix {servicemix-
 === Benefits and drawbacks
 
 ==== Plain XML or OSGi bundles
+
 Choose a plain XML file:
 
-* if you want to get routes deployed as quickly as possible \\ all you need for developing routes is a simple text editor, no compilation, building, ... required at all
-* if you prefer the XML syntax over the Java of Scala DSL
+* if you want to get routes deployed as quickly as possible. +
+  All you need for developing routes is a simple text editor, no compilation and building is required.
+* if you prefer the XML syntax over the Java of Scala DSL.
 
 Choose an OSGi bundle:
 
-* if you want to package helper classes together with your route definitions
-* if you prefer developing routes in the Java or Scala DSL \\ you can package the RouteBuilder implementations inside the bundle
+* if you want to package helper classes together with your route definitions.
+* if you prefer developing routes in the Java or Scala DSL. +
+    The RouteBuilder implementations can be packaged inside the bundle.
 
 ==== Blueprint or Spring
-Choose Blueprint:
 
-* if you want the best possible integration with the OSGi Framework and Service Registy \\ the Blueprint specification has been developed specifically for the OSGi Framework by the OSGi Alliance
+Choose Blueprint if you want the best possible integration with the OSGi Framework and Service Registy. The Blueprint specification
+has been developed specifically for the OSGi Framework by the OSGi Alliance.
 
-Choose Spring:
-
-* if you already invested in Spring for creating and running Camel routes
+Choose Spring if you already invested in Spring for creating and running Camel routes.
