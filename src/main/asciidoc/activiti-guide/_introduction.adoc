@@ -12,23 +12,17 @@
 // limitations under the License.
 //
 
-[WARNING]
-====
-Due to issue https://issues.apache.org/jira/browse/SM-2287[SM-2287], Activiti needs to be added in ServiceMix 5 to the boot features before usage.
-
-To add a boot feature, append the feature name to the featuresBoot list in the etc/org.apache.karaf.features.cfg. Afterwards, remove the data directory and start ServiceMix again.
-====
-
 == Introducing Activiti
 
-Activiti is a BPMN 2.0 process-engine framework that implements the BPMN 2.0 specification. 
-It's able to  perform BPMN 2.0 functions including deploy process definitions, start new process instances, execute user tasks ecc.ecc..
-Its core is a super-fast and rock-solid BPMN 2 process engine for Java.
+Activiti is a BPMN 2.0 process-engine framework that implements the BPMN 2.0 specification. It's able to  perform BPMN 2.0 functions
+including deploy process definitions, start new process instances, and execute user tasks. Its core is a super-fast and rock-solid
+BPMN 2 process engine for Java.
 
 
 === Activiti Engine
-This is the heart of the Activiti project.  It's a Java process engine that runs BPMN 2 processes natively.  It will have the following key properties:
 
+This is the heart of the Activiti project.  It's a Java process engine that runs BPMN 2 processes natively.  It will have the
+following key properties:
 
 * Allows user updates to be combined with process updates in a single transaction
 * Runs on any Java environment like Spring, JTA, standalone with any form of transaction demarcation
@@ -40,7 +34,6 @@ This is the heart of the Activiti project.  It's a Java process engine that runs
 * Hidden event listeners for decoupling software technical details from business level diagram
 * Ability to test process executions in isolation in a plain unit test
 
-
 == Goal of this guide
 
 The goal of this guide is to look into the details for using Activiti inside ServiceMix:
@@ -50,7 +43,7 @@ The goal of this guide is to look into the details for using Activiti inside Ser
 
 == Examples
 
-The Apache ServiceMix distributions also contain a Activiti example.  You can find these example in the _examples/activiti_ directory.
+The Apache ServiceMix distributions also contains an Activiti example.  You can find this example in the _examples/activiti_ directory.
 
 == More information about Activiti
 
@@ -58,7 +51,7 @@ More information about Activiti itself, can be found on http://activiti.org/.
 
 There's also book available about Activiti
 
-* Tijs Rademakers. (July 2012). _Activiti in Action_. Greenwich, CT: Manning. ISBN: 9781617290121.
+* Tijs Rademakers. (July 2012). _Activiti in Action_. Greenwich, Manning. ISBN: 9781617290121.
 
 image::rademakers2.png[Activiti in Action]
 
