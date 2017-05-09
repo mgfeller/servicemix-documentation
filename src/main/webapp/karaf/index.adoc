@@ -1,3 +1,0 @@
-= ServiceMix {servicemix-version} Documentation
-
-ServiceMix {servicemix-version} uses Apache Karaf.  

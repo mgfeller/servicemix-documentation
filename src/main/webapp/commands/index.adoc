@@ -1,2 +1,0 @@
-= ServiceMix {servicemix-version} Documentation
-Commands available in the  
