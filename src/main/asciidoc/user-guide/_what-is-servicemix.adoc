@@ -16,10 +16,10 @@
 
 Apache ServiceMix is an open source ESB (Enterprise Service Bus) that combines the functionality of a Service Oriented Architecture
 (SOA) and the modularity. The adoption of a Service Bus allows to decouple the applicatons together and reduce dependencies.
-Messages are used to wired the applications (=services) and/or connectors to exchange information using different protocols or
-communications mode like FTP, HTTP, WebServices, ...
+Messages are used to wire together applications (=services) and/or connectors to exchange information using different protocols or
+communication modes like FTP, HTTP, and web services.
 
-Apache ServiceMix is designed on top of the OSGI specification. Using OSGI framework brings a new important feature for SOA development:
+Apache ServiceMix is designed on top of the OSGI specification. Using OSGI framework brings a new important feature to SOA development:
 modularity. That means that we can handle classloading and application lifecycle differently between the components.
 
 ServiceMix is lightweight and easily embeddable, has integrated Spring support and can be run at the edge of the network (inside a
@@ -32,7 +32,7 @@ Apache ServiceMix is a distributed ESB built from the ground up and released und
 
 ServiceMix uses ActiveMQ to provide remoting, clustering, reliability and distributed failover.
 
-ServiceMix can be embedded into a JEE application server such as JBoss, Oracle Weblogic or IBM Websphere.
+ServiceMix can also be embedded into a JEE application server such as JBoss WildFly, Oracle Weblogic or IBM Websphere.
 
 === OSGi for Dummies
 
@@ -65,7 +65,7 @@ Here is a short list of features supported by the Karaf:
 
 Hot deployment: Karaf supports hot deployment of OSGi bundles by monitoring jar files inside the $home/deploy directory. Each time a
 jar is copied in this folder, it will be installed inside the runtime. You can then update or delete it and changes will be handled
-automatically. In addition, the Karaf also supports exploded bundles and custom deployers (blueprint and spring ones are included by
+automatically. In addition, the Karaf also supports exploded bundles and custom deployers (Blueprint and Spring ones are included by
 default).
 
 Dynamic configuration: Services are usually configured through the ConfigurationAdmin OSGi service. Such configuration can be

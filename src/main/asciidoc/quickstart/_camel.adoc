@@ -59,7 +59,8 @@ Using _bundle:list_, you'll notice that your XML file has been transformed into 
 
 image::camel-sample-deploy.png[]
 
-From this output, you also learn that the bundle id for your XML file is 250.  This allow you to start and stop the route whenever necessary.  Let's give this a go now...
+From this output, you also learn that the bundle id for your XML file is 250.  This allow you to start and stop the route whenever
+necessary.  Let's give this a go now:
 
 First, stop the route with
 [source,text]

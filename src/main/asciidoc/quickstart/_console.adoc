@@ -14,11 +14,13 @@
 
 == Apache ServiceMix console
 
-Now that we successfully installed and started Apache ServiceMix, we'll take a closer look at the console.  This is where you manage your ServiceMix instance, add and remove bundles, install optional features, ...
+Now that we successfully installed and started Apache ServiceMix, we'll take a closer look at the console.  This is where you manage
+your ServiceMix instance, add and remove bundles, install optional features, and more.
 
 === Working with bundles
 
-When ServiceMix is first started, a whole set of bundles providing the core features for the product are being installed.  Let's use the command console to find out more about them...
+When ServiceMix is first started, a whole set of bundles providing the core features for the product are being installed.  Let's use
+the command console to find out more about them.
 
 The _bundle:list_ command can be used to get a list of all bundles currently installed.  Enter this
 
@@ -38,7 +40,8 @@ For every bundle, you see:
 * the bundle start level
 * the bundle version and name
 
-If you're looking for something specific in the list, you can use unix-like pipes and utilities to help you.  An example: to look for all Camel related bundles...
+If you're looking for something specific in the list, you can use unix-like pipes and utilities to help you. An example: to look
+for all Camel related bundles:
 
 [source,text]
 ----
@@ -49,7 +52,8 @@ image::osgi-list-pipegrep.png[]
 
 === Working with logging
 
-Many of the applications you write will have some form of log output.  To look at the message in the log file, you can us the _log:diplay_ command.
+Many of the applications you write will have some form of log output.  To look at the message in the log file, you can us the
+_log:diplay_ command.
 
 [source,text]
 ----
@@ -67,7 +71,8 @@ karaf@root> log:exception-display
 
 image::log-display-exception.png[]
 
-You can also change the log level at runtime by using the _log:set_ command.  You can try these commands on your instance now by first setting the log level to _DEBUG_ and then using _grep_ to make sure that you can actually see the extra logging.
+You can also change the log level at runtime by using the _log:set_ command.  You can try these commands on your instance now by
+first setting the log level to _DEBUG_ and then using _grep_ to make sure that you can actually see the extra logging.
 
 [source,text]
 ----
@@ -86,4 +91,5 @@ karaf@root> log:set INFO
 
 === ...and there's a lot more
 
-These are obviously just a few examples of what the command shell is all about.  There are a lot more commands in the shell to help you deploy, monitor, manage and troubleshoot the applications you're building with ServiceMix.
+These are obviously just a few examples of what the command shell is all about.  There are a lot more commands in the shell to help
+you deploy, monitor, manage and troubleshoot the applications you're building with ServiceMix.

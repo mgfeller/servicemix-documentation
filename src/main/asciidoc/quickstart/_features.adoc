@@ -51,4 +51,5 @@ karaf@root> feature:list | grep -i webconsole
 image::featureslist-grep-webconsole.png[]
 
 You will now be able to point your browser to http://localhost:8181/system/console and login with user _smx_ and password _smx_ to
-access the web console.  From the webconsole, you can also start and stop bundles, install optional features again, ...
+access the web console.  From the webconsole, Karaf can be managed, including starting and stopping bundles, installing and
+uninstalling features, and managing the configuration. 
