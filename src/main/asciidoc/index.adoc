@@ -23,8 +23,8 @@ Apache Software Foundation
  [smx-list-description]#Apache ServiceMix uses Apache Karaf as the underlying OSGi server runtime. This manual explains about the features and functionality provided by Karaf.#
 * link:++https://karaf.apache.org/manual/latest/#_developer_guide++[Karaf Developer Guide] +
  [smx-list-description]#The Apache Karaf Developer Guide gives you some information about developing with and for the OSGi server runtime.#
-* <<commercial-guides#,Commercial Guides>> + 
- [smx-list-description]#Documentation from commercial providers and books you can buy.#
+* <<resources#,Further Resources>> + 
+ [smx-list-description]#A selection of related books and websites.#
 * <<contribute#,We welcome contributions!>>
 * <<documentation#,Complete Documentation>> +
  [smx-list-description]#The complete ServiceMix documentation as one file, without the Karaf documentation.#

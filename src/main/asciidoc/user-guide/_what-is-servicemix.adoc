@@ -105,7 +105,7 @@ implement routing and mediation rules in either a Java based http://camel.apache
 API)], via http://camel.apache.org/spring.html[Spring based Xml Configuration] files or via the
 http://camel.apache.org/scala-dsl.html[Scala DSL].
 
-For more information, check out the <<activemq-guide.adoc#,Using Apache Camel in ServiceMix User Guide>>.
+For more information, check out the <<camel-guide.adoc#,Using Apache Camel in ServiceMix User Guide>>.
 
 === Services proposed
 

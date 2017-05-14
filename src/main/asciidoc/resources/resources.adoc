@@ -14,8 +14,8 @@
 
 // This is standalone document with a Asciidoctor document title.
 // This document is not intended to be included in other documents.
-= Commercial Guides
+= Resources
 Apache Software Foundation
 :numbered:
 
-include::commercial-guides/_commercial-guides.adoc[]
+include::resources/_resources.adoc[]

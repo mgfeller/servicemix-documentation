@@ -50,6 +50,6 @@ about the features and functionality provided by Karaf.
 
 The Apache https://karaf.apache.org/manual/latest/#_developer_guide[Karaf Developer Guide] gives you some information about developing with and for the OSGi server runtime.
 
-== Commercial Guides
+== Resources
 
-include::commercial-guides/_commercial-guides.adoc[leveloffset=+1]
+include::resources/_resources.adoc[leveloffset=+1]

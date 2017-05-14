@@ -25,8 +25,8 @@ installed, the version and the name of the feature.
 image::featureslist.png[]
 
 The full list contains a lot of different features: optional Camel components, features for adding OBR or wrapper support to
-ServiceMix, a web console, ...  Again, you can use things like _|_ and _grep_ to find the things in the list that you're interested
-in.
+ServiceMix, a web console, and many more.  Again, you can use things like _|_ and _grep_ to find the things in the list that you're
+interested in.
 
 [source,text]
 ----
